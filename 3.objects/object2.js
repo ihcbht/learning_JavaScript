@@ -65,3 +65,22 @@ console.log(Object.entries(tinderUser)); //[ [ 'id', '123654' ], [ 'name', 'Ashu
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); //true
 
+
+const course = {
+    courseName: "JS",
+    price: "455",
+    instructor: "Ashutosh"
+}
+
+const {instructor} = course
+console.log(instructor); //Ashutosh
+
+const {instructor: teacher} = course
+console.log(teacher); //Ashutosh
+
+//example of an api
+// {
+//     "name": "ashutosh",
+//     "courseName": "Coding",
+//     "price": "1"
+// }
